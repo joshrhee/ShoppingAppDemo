@@ -2,6 +2,17 @@
   text-align: center;
 }
 
+.background {
+  background-image: url(/src/resources/background.jpeg);
+  background-position: center;
+  color: white;
+}
+
+
+
+
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

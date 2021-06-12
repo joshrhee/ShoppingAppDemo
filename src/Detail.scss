@@ -1,0 +1,43 @@
+// yarn add node-sass
+@import './reset.scss';
+
+$mainColor: #ff0000;
+
+.red {
+    color: $mainColor;
+}
+
+//Sass의 함수 선언 방식
+@mixin 함수 {
+    background: #eeeeee;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+}
+
+.my-alert {
+    @include 함수()
+}
+
+//.my-alert의 모든 속성을 다 가져옴
+.my-alert2 {
+    @extend .my-alert;
+    background: #ffe591;
+}
+
+
+.my-alert p {
+    margin-bottom: 0;
+}
+
+// //div container안에 있는 h4는 파랑색으로 만들고, p는 초록색으로 만ㄷ름
+// div.container {
+//     h4 {
+//         color: blue;
+//     }
+//     p {
+//         color: green;
+//     }
+// }
